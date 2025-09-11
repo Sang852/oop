@@ -38,14 +38,12 @@ namespace HW2
 
             Console.WriteLine("=====Management Person Program=====");
 
-            // Nhập 3 người
             for (int i = 0; i < persons.Length; i++)
             {
                 Console.WriteLine("Input Information of Person");
                 persons[i] = person.inputPersonInfo();
             }
 
-            // Sắp xếp
             try
             {
                 persons = person.sortBySalary(persons);
